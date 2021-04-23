@@ -21,3 +21,8 @@ Usage (Sublime Text):
 Notes
 * Binds to `localhost:2881` by default, can be configured by setting `ESLINT_PORT` and `ESLINT_HOST` environment variables
 * Service worker sticks around for 15 minutes by default, can be configured by setting `ESLINT_TIMEOUT` environment variable (timeout in seconds)
+* Only the particular command-line options (`eslint --format json --stdin --stdin-filename`) used by SublimeLinter-eslint currently supported, but it would be very easy to add additional support for other options, PRs welcome!
+
+Timing comparison (on a fully primed disk cache):
+* `eslint`: 1055ms
+* `eslint-service`: 181ms
