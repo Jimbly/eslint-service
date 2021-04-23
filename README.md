@@ -24,4 +24,4 @@ Notes
 
 Timing comparison (on a fully primed disk cache):
 * `eslint`: 1055ms
-* `eslint-service`: 181ms
+* `eslint-service`: 248ms
