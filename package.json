@@ -1,0 +1,17 @@
+{
+	"name": "eslint-service",
+	"version": "0.0.1",
+  "description": "ESLint service worker for maximally efficient editor integrations",
+  "keywords": [
+    "eslint"
+  ],
+  "author": "Jimb Esser (https://github.com/Jimbly)",
+  "license": "MIT",
+	"bin": {
+		"eslint-service": "bin/eslint-service.js"
+	},
+	"dependencies": {
+		"eslint": "^7.24.0",
+		"minimist": "^1.2.5"
+	}
+}
