@@ -1,5 +1,4 @@
 # eslint-service
-================
 
 Installation: `npm install --global eslint-service`
 
@@ -10,11 +9,11 @@ Usage (Sublime Text):
 * Configure like so:
 ```json
 {
-	"linters": {
-		"eslint": {
-			"executable": "eslint-service"
-		}
-	}
+  "linters": {
+    "eslint": {
+      "executable": "eslint-service"
+    }
+  }
 }
 ```
 
