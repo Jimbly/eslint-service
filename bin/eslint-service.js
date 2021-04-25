@@ -30,8 +30,8 @@ function tryit(on_error) {
     path: '/eslint',
     method: 'POST',
     headers: {
-      'Content-Type': 'application/json',
-      'Content-Length': data.length
+      'Content-Type': 'application/json; charset=utf-8',
+      'Content-Length': Buffer.byteLength(data, 'utf8'),
     },
   };
 
