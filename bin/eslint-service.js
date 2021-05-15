@@ -12,7 +12,7 @@ const path = require('path');
 // The supported options, as used by SublimeLinter-eslint
 assert.equal(argv.stdin, true);
 assert.equal(argv.format, 'json');
-assert(argv['stdin-filename']);
+//assert(argv['stdin-filename']); // Not strictly needed
 
 argv.code = fs.readFileSync(0, 'utf-8');
 let data = JSON.stringify(argv);
