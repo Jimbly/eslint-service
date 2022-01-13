@@ -1,6 +1,6 @@
 {
 	"name": "eslint-service",
-	"version": "0.0.4",
+	"version": "0.0.5",
   "description": "ESLint service worker for maximally efficient editor integrations",
   "keywords": [
     "eslint"
