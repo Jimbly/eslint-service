@@ -14,6 +14,13 @@ assert.equal(argv.stdin, true);
 assert.equal(argv.format, 'json');
 //assert(argv['stdin-filename']); // Not strictly needed
 
+if (argv['stdin-filename'] && !path.isAbsolute(argv['stdin-filename'])) {
+  argv['stdin-filename'] = path.join(process.cwd(), argv['stdin-filename']);
+}
+if (argv['stdin-filename'] && argv['stdin-filename'].endsWith('fallback_filename')) {
+  argv['stdin-filename'] += '.js';
+}
+
 argv.code = fs.readFileSync(0, 'utf-8');
 let data = JSON.stringify(argv);
 
